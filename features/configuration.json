@@ -1,35 +1,45 @@
 {
-	"$schema": "https://raw.githubusercontent.com/liferay/liferay-js-toolkit/master/resources/schemas/configuration.schema.json",
-	"system": {
-		"category": "liferay-portlet",
-		"name": "liferay-portlet",
-		"fields": {
-			"fruit": {
-				"type": "string",
-				"name": "fruit",
-				"description": "fruit-help",
-				"default": "orange",
-				"options": {
-					"orange": "an-orange",
-					"pear": "a-pear",
-					"apple": "an-apple"
-				}
-			}
-		}
-	},
-	"portletInstance": {
-		"fields": {
-			"drink": {
-				"type": "string",
-				"name": "drink",
-				"description": "drink-help",
-				"default": "water",
-				"options": {
-					"water": "water",
-					"wine": "wine",
-					"beer": "beer"
-				}
-			}
-		}
-	}
+  "$schema": "https://raw.githubusercontent.com/liferay/liferay-js-toolkit/master/resources/schemas/configuration.schema.json",
+  "system": {
+    "category": "liferay-portlet",
+    "name": "liferay-portlet",
+    "fields": {
+      "fruit": {
+        "type": "string",
+        "name": "fruit",
+        "description": "fruit-help",
+        "default": "orange",
+        "options": {
+          "orange": "an-orange",
+          "pear": "a-pear",
+          "apple": "an-apple"
+        }
+      }
+    }
+  },
+  "portletInstance": {
+    "fields": {
+      "viewMode": {
+        "type": "string",
+        "name": "viewMode",
+        "description": "viewModeDescription",
+        "default": "FULL",
+        "options": {
+          "FULL": "viewModeFull",
+          "BRIEF": "viewModeBrief"
+        }
+      },
+      "locations": {
+        "type": "string",
+        "name": "locations",
+        "description": "locationsDescription",
+        "options": {
+          "lund": "locationLund",
+          "malmo": "locationMalmo",
+          "stockholm": "locationStockholm"
+        },
+        "repeatable": true
+      }
+    }
+  }
 }
