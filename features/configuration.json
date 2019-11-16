@@ -1,24 +1,13 @@
 {
   "$schema": "https://raw.githubusercontent.com/liferay/liferay-js-toolkit/master/resources/schemas/configuration.schema.json",
-  "system": {
-    "category": "liferay-portlet",
-    "name": "liferay-portlet",
-    "fields": {
-      "fruit": {
-        "type": "string",
-        "name": "fruit",
-        "description": "fruit-help",
-        "default": "orange",
-        "options": {
-          "orange": "an-orange",
-          "pear": "a-pear",
-          "apple": "an-apple"
-        }
-      }
-    }
-  },
   "portletInstance": {
     "fields": {
+      "isFullWidthMode": {
+        "type": "boolean",
+        "name": "isFullWidthMode",
+        "description": "isFullWidthModeDescription",
+        "default": "false"
+      },
       "viewMode": {
         "type": "string",
         "name": "viewMode",
@@ -29,14 +18,49 @@
           "BRIEF": "viewModeBrief"
         }
       },
+      "visibleComponents": {
+        "type": "string",
+        "name": "visibleComponents",
+        "description": "visibleComponentsDescription",
+        "default": "eventLocation",
+        "options": {
+          "eventLocation": "eventLocation"
+        },
+        "repeatable": true
+      },
+      "pageSize": {
+        "type": "string",
+        "name": "pageSize",
+        "description": "pageSizeDescription",
+        "default": "8"
+      },
+      "eventDetailPage": {
+        "type": "string",
+        "name": "eventDetailPage",
+        "description": "eventDetailPageDescription",
+        "default": "/web/arena/events"
+      },
       "locations": {
         "type": "string",
         "name": "locations",
         "description": "locationsDescription",
         "options": {
-          "lund": "locationLund",
-          "malmo": "locationMalmo",
-          "stockholm": "locationStockholm"
+        },
+        "repeatable": true
+      },
+      "targetAudiences": {
+        "type": "string",
+        "name": "targetAudiences",
+        "description": "targetAudiencesDescription",
+        "options": {
+        },
+        "repeatable": true
+      },
+      "tags": {
+        "type": "string",
+        "name": "tags",
+        "description": "tagsDescription",
+        "options": {
         },
         "repeatable": true
       }
