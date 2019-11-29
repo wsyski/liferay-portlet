@@ -1,9 +1,4 @@
 {
-	"angularCompilerOptions": {
-		"fullTemplateTypeCheck": true,
-		"strictInjectionParameters": true
-	},
-	"compileOnSave": false,
 	"compilerOptions": {
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
@@ -21,4 +16,3 @@
 	},
 	"include": ["./src/**/*.ts"]
 }
-

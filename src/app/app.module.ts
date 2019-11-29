@@ -2,10 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import {ModalModule} from "ngx-bootstrap";
 
 @NgModule({
-	imports: [BrowserModule, ModalModule.forRoot()],
+	imports: [BrowserModule],
 	declarations: [AppComponent],
 	entryComponents: [AppComponent],
 	bootstrap: [], // Don't bootstrap any component statically (see ngDoBootstrap() below)
