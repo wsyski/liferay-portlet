@@ -45,6 +45,7 @@
 		"webpack-dev-server": "~3.10.1"
 	},
 	"scripts": {
+		"build:dll": "webpack --config ./webpack.dll.config.js",
 		"build": "tsc && npm run copy-assets && liferay-npm-bundler",
 		"copy-assets": "lnbs-copy-assets",
 		"translate": "lnbs-translate",
