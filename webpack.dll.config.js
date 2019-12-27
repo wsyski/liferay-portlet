@@ -8,16 +8,17 @@ module.exports = {
     noEmitOnErrors: true
   },
   entry: {
-    angular: [
+    common: [
       "@angular/animations",
       "@angular/core",
       "@angular/common",
+      "@angular/compiler",
       "@angular/forms",
-      "@angular/router",
       "@angular/platform-browser",
       "@angular/platform-browser-dynamic",
+      "@angular/router",
       "rxjs"
-    ],
+    ]
     // ui: []
   },
   output: {
