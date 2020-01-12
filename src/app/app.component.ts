@@ -5,7 +5,9 @@ import LiferayParams from '../types/LiferayParams'
 declare const Liferay: any;
 
 @Component({
-	templateUrl: '/o/liferay-portlet/app/app.component.html'
+	templateUrl: 
+		Liferay.ThemeDisplay.getPathContext() + 
+		'/o/liferay-portlet/app/app.component.html'
 })
 export class AppComponent {
 	params: LiferayParams;

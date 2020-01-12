@@ -9,6 +9,6 @@
 		}
 	},
 	"dump-report": true,
-    "process-serially": false,
+    "max-parallel-files": 128,
     "verbose": true
 }
