@@ -11,7 +11,6 @@
 		"@angular/platform-browser": "~9.0.0-rc.9",
 		"@angular/platform-browser-dynamic": "~9.0.0-rc.9",
 		"@angular/router": "~9.0.0-rc.9",
-		"core-js": "~3.6.4",
 		"rxjs": "~6.5.3",
 		"tslib": "^1.10.0",
 		"zone.js": "~0.10.2"
@@ -24,6 +23,7 @@
 		"webpack-cli": "3.3.10",
 		"webpack-dev-server": "~3.10.1",
 		"ts-loader": "5.3.3",
+		"core-js": "~3.6.4",
 		"core-js-builder": "~3.6.4",
 		"@angular-devkit/build-angular": "~0.900.0-rc.9",
 		"@angular/cli": "~9.0.0-rc.9",
@@ -46,7 +46,8 @@
 		"typescript": "~3.6.4"
 	},
 	"scripts": {
-		"build": "tsc && npm run copy-assets && liferay-npm-bundler",
+		"core-js": "node core-js-reflect-metadata.js",
+		"build": "tsc && cp src/reflect-metadata.js build && npm run copy-assets && liferay-npm-bundler",
 		"copy-assets": "lnbs-copy-assets",
 		"translate": "lnbs-translate",
 		"deploy": "npm run build && lnbs-deploy",
