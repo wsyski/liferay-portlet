@@ -17,12 +17,12 @@
 		"zone.js": "~0.10.2"
 	},
 	"devDependencies": {
-		"liferay-npm-bundler": "^2.17.0",
-		"liferay-npm-build-support": "^2.17.0",
-		"copy-webpack-plugin": "4.6.0",
-		"webpack": "4.29.6",
-		"webpack-cli": "3.3.0",
-		"webpack-dev-server": "3.2.1",
+		"liferay-npm-bundler": "~2.17.0",
+		"liferay-npm-build-support": "~2.17.0",
+		"copy-webpack-plugin": "~4.6.0",
+		"webpack": "4.41.5",
+		"webpack-cli": "3.3.10",
+		"webpack-dev-server": "~3.10.1",
 		"ts-loader": "5.3.3",
 		"@angular-devkit/build-angular": "~0.900.0-rc.9",
 		"@angular/cli": "~9.0.0-rc.9",
