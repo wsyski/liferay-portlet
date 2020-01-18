@@ -46,8 +46,8 @@
 		"typescript": "~3.6.4"
 	},
 	"scripts": {
-		"core-js": "node core-js-reflect-metadata.js",
-		"build": "tsc && cp src/reflect-metadata.js build && npm run copy-assets && liferay-npm-bundler",
+		"build:core-js": "node core-js-reflect-metadata.js && cp src/reflect-metadata.js build/reflect-metadata.js",
+		"build": "tsc  && npm run copy-assets && npm run build:core-js && liferay-npm-bundler",
 		"copy-assets": "lnbs-copy-assets",
 		"translate": "lnbs-translate",
 		"deploy": "npm run build && lnbs-deploy",
