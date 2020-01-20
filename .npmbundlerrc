@@ -1,4 +1,7 @@
 {
+	"exclude": {
+		"rxjs": true
+	},
 	"create-jar": {
 		"output-dir": "dist",
 		"features": {
